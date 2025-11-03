@@ -28,8 +28,8 @@ jobs:
     - name: Install dependencies
       run: pip install requests
       
-    - name: Create and run merge script
-      run: |
+- name: Create and run merge script
+run: |
 # 创建你的 Python 脚本
 cat > merge_script.py << 'EOF'
 # -*- coding: utf-8 -*-
