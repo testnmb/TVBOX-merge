@@ -1,16 +1,12 @@
 name: 每天定时抓取 tvbox 相关配置代码
-
 on:
   schedule:
     # UTC 时间每天 02:00 执行（北京时间 10:00）
     - cron: '0 2 * * *'
-  # 支持手动触发测试
-  workflow_dispatch:
 
 jobs:
   fetch-and-save:
     runs-on: ubuntu-latest
-
     steps:
       - name: 检出代码
         uses: actions/checkout@v3
