@@ -8,6 +8,7 @@ from datetime import datetime
 # ======================
 
 GITHUB_TOKEN = os.getenv('GH_TOKEN')  # 用于读写你的目标仓库
+print(f"🔐 当前 GH_TOKEN 值：{os.getenv('GH_TOKEN')[:5]}...（共{len(os.getenv('GH_TOKEN') or '')}位）")
 GITHUB_USERNAME = 'leexuben'
 REPO_NAME = 'TVBOX-merge'  # 注意：这里只是仓库名，不是 leexuben/TVBOX-merge
 FILE_PATH = 'source.txt'  # 比如根目录下的 source.txt
