@@ -7,7 +7,7 @@ from datetime import datetime
 # 1. 从 GitHub Secrets 读取配置
 # ======================
 
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')  # 用于读写你的目标仓库
+GITHUB_TOKEN = os.getenv('GH_TOKEN')  # 用于读写你的目标仓库
 GITHUB_USERNAME = os.getenv('GITHUB_USERNAME', '你的用户名')  # 例如 'hxy97'
 REPO_NAME = os.getenv('REPO_NAME', '你的仓库名')  # 例如 'tvbox-config-collector'
 FILE_PATH = os.getenv('FILE_PATH', 'source.txt')  # 保存结果的文件，如 source.txt
