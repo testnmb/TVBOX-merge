@@ -20,6 +20,9 @@ from datetime import datetime
 GITHUB_TOKEN = os.getenv("GH_TOKEN")  
 # 👤 你的 GitHub 用户名（已写死）
 GITHUB_USERNAME = 'leexuben'
+print(f"🔗 请求 URL: {url}")
+print(f"🔐 请求头: {headers}")
+print(f"⚠️ 响应状态码: {response.status_code}, 响应内容: {response.text}")
 
 # 📦 你的目标仓库名（已写死，格式仅为仓库名）
 REPO_NAME = 'TVBOX-merge'  # 注意：这里只是仓库名，不是 leexuben/TVBOX-merge
